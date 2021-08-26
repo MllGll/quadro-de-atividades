@@ -1,0 +1,82 @@
+.task{
+    display: flex;
+    margin-top: 10px;
+}
+.task button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.resto{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.resto span{
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(to right, darkgray, lightgray);
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.but{
+    display: flex;
+}
+
+.fixar{
+    background-color: lightgray;
+    border-style: none;
+}
+
+.fixar:hover{
+    background-color: orange;
+}
+
+
+.excluir{
+    background-color: red;
+    border-style: none;
+}
+
+.excluir:hover{
+    background-color: darkred;
+}
+
+.checkbox{
+    border-style: solid;
+    background-color: transparent;
+    border-color: darkgray;
+    margin-right: 10px;
+    border-width: 5px;
+
+}
+
+.checkbox:hover{
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+}
+
+.check button{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.checkbox i{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.but button{
+    display: table-cell;
+    vertical-align: middle;
+}
