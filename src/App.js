@@ -13,11 +13,16 @@ function App() {
 
   return (
     <div className="App">
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"></link>
         <header>
           <h1>Hoje</h1>
         </header>
         <div>
-          <Add onSave={addTask}/>
+          <div className="search">
+            <Add onSave={addTask}/>
+          </div>
           <div className="board">
             {tasks.map((task, index) => {return <Task task={task} key={index}/>})}
           </div>

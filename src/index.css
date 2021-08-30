@@ -1,14 +1,20 @@
 body{
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #f8f9fa;
 }
 
 header {
   text-align: center;
+  color: #343a40;
+}
+
+.search{
+  width: 50%;
+  margin: auto;
 }
 
 .board{
-  width: 760px;
+  width: 50%;
   height: 30rem;
-  margin-left: 398px;
-  margin-top: 30px;
+  margin: auto;
 }

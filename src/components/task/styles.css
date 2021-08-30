@@ -1,14 +1,14 @@
 .task{
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .task button{
-    border-radius: 50%;
+    border-radius: 10px;
     width: 40px;
     height: 40px;
-    margin-left: 5px;
     display: flex;
     justify-content: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .resto{
@@ -19,12 +19,14 @@
 
 .resto span{
     width: 100%;
-    border-radius: 50px;
-    background: linear-gradient(to right, darkgray, lightgray);
-    font-size: 25px;
-    padding-left: 15px;
-    padding-top: 5px;
-    cursor: pointer;
+    border-radius: 10px;
+    background-color: #dee2e6;
+    font-size: 20px;
+    padding-left: 17px;
+    padding-top: 8px;
+    color: #343a40;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: default;
 }
 
 .but{
@@ -32,42 +34,41 @@
 }
 
 .fixar{
-    background-color: lightgray;
+    background-color: #dee2e6;
     border-style: none;
+    color: #343a40;
 }
 
 .fixar:hover{
-    background-color: orange;
+    background-color:#ffaa00;
 }
 
 
 .excluir{
-    background-color: red;
+    background-color: #da1e37;
     border-style: none;
+    color: #343a40;
 }
 
 .excluir:hover{
-    background-color: darkred;
+    background-color: #a11d33;
 }
 
 .checkbox{
-    border-style: solid;
-    background-color: transparent;
-    border-color: darkgray;
     margin-right: 10px;
-    border-width: 5px;
-
+    background-color: #dee2e6;
+    border-style: none;
+    cursor: pointer;
 }
 
 .checkbox:hover{
     background-color: deepskyblue;
-    border-color: deepskyblue;
 }
 
 .check button{
     display: table-cell;
     vertical-align: middle;
-
+    color: #ced4da;
 }
 
 .checkbox i{
@@ -79,4 +80,6 @@
 .but button{
     display: table-cell;
     vertical-align: middle;
+    cursor: pointer;
+    margin-left: 10px;
 }

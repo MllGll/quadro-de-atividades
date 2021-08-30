@@ -13,7 +13,7 @@ function Add (props){
 
         <div className="add">
             <input placeholder="Nova Atividade..." value={inputText} onChange={(e) => {setInputText(e.target.value)}}/>
-            <button onClick={() => {onSave(inputText)}}><i class="material-icons">add</i></button>
+            <button className="addButton" onClick={() => {onSave(inputText)}}><i class="material-icons">add</i></button>
         </div>
         </>
     )
