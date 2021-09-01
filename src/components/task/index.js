@@ -2,9 +2,7 @@ import React from 'react';
 import './styles.css';
 
 function Task (props) {
-    const {task} = props;
-
-
+    const {task, onRemove, key} = props;
 
     return(
         <>
@@ -17,8 +15,8 @@ function Task (props) {
                 <div className="resto">
                     <span>{task}</span>
                     <div className="but">
-                        <button className="fixar"><i class="material-icons">push_pin</i></button>
-                        <button className="excluir"><i class="material-icons">delete</i></button>
+                        <button className="fixar"><i class="material-icons">schedule</i></button>
+                        <button className="excluir" onClick={() => onRemove(key)}><i class="material-icons">delete</i></button>
                     </div>
                 </div>
                 

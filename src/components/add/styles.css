@@ -1,5 +1,5 @@
 input{
-    padding: 10px 20rem 10px 10px;
+    padding: 10px 20px 10px 10px;
     border-radius: 30px;
     border-style: solid;
     border-width: 1px;
@@ -13,26 +13,30 @@ input{
 
 .addButton{
     background-color: #343a40;
-    color: white;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    padding: 0px 20px 0px 20px;
+    width: 100px;
+    display: table-cell;
+    transition: all ease 0.2s;
+}
 
+.addButton:hover{
+    background-color: #212529;
 }
 
 ::placeholder{
     font-style: italic;
-    color: #dee2e6;
+    color: #788796;
 }
 
 .add{
     display: flex;
+    margin: 0 10px 0 10px;
 }
 
 .add button i{
     font-size: 2rem;
-    display: table-cell;
     vertical-align: middle;
     color: #6c757d;
 }

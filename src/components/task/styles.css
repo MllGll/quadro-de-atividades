@@ -1,14 +1,14 @@
 .task{
     display: flex;
-    margin-top: 15px;
+    margin: 0px 10px 15px 10px;
 }
 .task button{
     border-radius: 10px;
     width: 40px;
     height: 40px;
     display: flex;
-    justify-content: center;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: all ease 0.2s;
 }
 
 .resto{
@@ -25,7 +25,7 @@
     padding-left: 17px;
     padding-top: 8px;
     color: #343a40;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
     cursor: default;
 }
 
@@ -48,6 +48,10 @@
     background-color: #da1e37;
     border-style: none;
     color: #343a40;
+}
+
+.but i{
+    vertical-align: middle;
 }
 
 .excluir:hover{
@@ -79,7 +83,6 @@
 
 .but button{
     display: table-cell;
-    vertical-align: middle;
     cursor: pointer;
     margin-left: 10px;
 }
