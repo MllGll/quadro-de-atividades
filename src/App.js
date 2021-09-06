@@ -6,10 +6,10 @@ import Calendar from "./components/calendar"
 
 function App() {
 
-  const [tasks, setTasks, index] = useState([])
+  const [tasks, setTasks] = useState([])
 
-  const addTask = (task) => {
-    if(task)setTasks([...tasks, task]);
+  const addTask = (task, index) => {
+    if(task)setTasks([...tasks, {name: task, key: index}]);
   }
 
   const removeTask = (index) => {
@@ -29,7 +29,7 @@ function App() {
             <Add onSave={addTask}/>
           </div>
           <div className="board">
-            {tasks.map((task, index) => {return <Task task={task} key={index} onRemove={removeTask}/>})}
+            {tasks.map((task) => {return <Task name={task.name} key={task.key} onRemove={()=>removeTask(task.key)}/>})}
           </div>
         </div>
         <footer>

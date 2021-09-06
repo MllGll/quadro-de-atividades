@@ -12,7 +12,7 @@ input{
 }
 
 .addButton{
-    background-color: #343a40;
+    background-color: #5a189a;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -22,7 +22,7 @@ input{
 }
 
 .addButton:hover{
-    background-color: #212529;
+    background-color: #3c096c;
 }
 
 ::placeholder{
@@ -38,5 +38,5 @@ input{
 .add button i{
     font-size: 2rem;
     vertical-align: middle;
-    color: #6c757d;
+    color: #7b2cbf;
 }

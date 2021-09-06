@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 function Task (props) {
-    const {task, onRemove, key} = props;
+    const {name, onRemove, key} = props;
 
     return(
         <>
@@ -10,10 +10,10 @@ function Task (props) {
 
             <div className="task">
             <div className="check">
-                <button className="checkbox"><i class="material-icons">done</i></button>
+                <button type="checkbox" className="checkbox"><i class="material-icons">done</i></button>
             </div>
                 <div className="resto">
-                    <span>{task}</span>
+                    <span>{name}</span>
                     <div className="but">
                         <button className="fixar"><i class="material-icons">schedule</i></button>
                         <button className="excluir" onClick={() => onRemove(key)}><i class="material-icons">delete</i></button>
